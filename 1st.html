@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        form{
+            background-color: white;
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 30px;
+            margin: auto;
+        }
+        fieldset{
+            background-color:  rgb(93, 176, 212);
+            border-radius: 30px;
+            padding: 30px;
+            margin: 20px;
+        }
+        #lenght{
+            width: 25px;
+        }
+        .tx{
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><i>Registration form </i></h1>
+
+    <form>
+    <fieldset class="fieldset">
+        <div id="padding">
+            <label>First name: <input type="text"></label> <br> <br>
+            <label>Middle name: <input type="text"></label> <br> <br>
+            <label>Last name: <input type="text"></label> <br> <br>
+        <label>Course:
+            <select>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>MCA</option>
+                <option>MBA</option>
+                <option>MTech</option>
+            </select>
+        </label> <br> <br>
+        <label>Gender: <br>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+            <input type="radio" name="gender">Other <br>
+        </label> <br> <br>
+        <label>Phone: 
+            <input type="tel" value="+91" maxlength="3" minlength="3" id="lenght">
+            <input type="tel" maxlength="10" minlength="10">
+        </label> <br> <br>
+        <label>Address:<textarea class="tx"></textarea></label> <br><br>
+        <label>Email: <input type="text"></label> <br><br>
+        <label>Passworrd:<input type="password" maxlength="10" minlength="8"></label> <br><br>
+        <label>Re-type Paasword: <input type="password" maxlength="10" minlength="8"></label><br><br>
+        <input type="submit" value="submit">
+    </div>
+    </fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

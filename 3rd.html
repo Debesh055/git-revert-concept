@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pos_neg()
+        {
+            let x= Number(document.getElementById('t1').value)
+            if (x>0)
+            {
+                document.getElementById('t2').value="positive no="+x
+                document.getElementById('p1').innerHTML="positive no="+x
+                alert("positive no")
+
+
+            }
+            else if(x==0){
+                document.getElementById('t2').value="nutral="+x
+                document.getElementById('p1').innerHTML="nutral="+x
+                alert("nutral no")
+            }
+            else
+            {
+                document.getElementById('t2').value="negative no="+x
+                document.getElementById('p1').innerHTML="negative no="+x
+                alert("negative no")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    enter the no=<input type="text" id="t1"> <br><br>
+    result=<input type="text" readonly id="t2"> <br><br>
+    <input type="button" value="click" onclick="pos_neg()">
+    <p id="p1"></p>
+</body>
+</html>
